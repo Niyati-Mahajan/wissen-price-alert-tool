@@ -1,0 +1,44 @@
+UNIT TESTS
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+test_csv_sorts_dates (test_alerts.PriceAlertTests.test_csv_sorts_dates) ... ok
+test_dates_and_rule_ids_sort_output (test_alerts.PriceAlertTests.test_dates_and_rule_ids_sort_output) ... ok
+test_duplicate_instrument_day_rejected (test_alerts.PriceAlertTests.test_duplicate_instrument_day_rejected) ... ok
+test_invalid_direction_rejected (test_alerts.PriceAlertTests.test_invalid_direction_rejected) ... ok
+test_invalid_json_rejected (test_alerts.PriceAlertTests.test_invalid_json_rejected) ... ok
+test_level_above_fires_on_crossing (test_alerts.PriceAlertTests.test_level_above_fires_on_crossing) ... ok
+test_level_below_fires_only_on_crossing (test_alerts.PriceAlertTests.test_level_below_fires_only_on_crossing) ... ok
+test_ma_cross_above (test_alerts.PriceAlertTests.test_ma_cross_above) ... ok
+test_ma_needs_full_windows (test_alerts.PriceAlertTests.test_ma_needs_full_windows) ... ok
+test_no_level_alert_without_previous_day (test_alerts.PriceAlertTests.test_no_level_alert_without_previous_day) ... ok
+test_short_must_be_less_than_long (test_alerts.PriceAlertTests.test_short_must_be_less_than_long) ... ok
+test_unknown_instrument_is_ignored (test_alerts.PriceAlertTests.test_unknown_instrument_is_ignored) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK
+
+SAMPLE RUN
+stdout:
+2026-09-03	r1	INFY	level below 1500
+stderr:
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.
+exit code: 0
